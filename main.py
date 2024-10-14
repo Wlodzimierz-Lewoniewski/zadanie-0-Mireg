@@ -1,12 +1,18 @@
 import re
 
-data = input()
+docs_number = int(input('Ilość dokumentów'))
+documents = []
 
-docs_number = int(data[0])
-documents = data[1:docs_number+1]
+for _ in range(docs_number):
+    doc_text = input()
+    documents.append(doc_text)
 
-queries_number = int(data[docs_number+1])
-queries = data[docs_number+2:]
+queries_number = int(input('Liczba zapytań'))
+queries = []
+
+for _ in range(queries_number):
+    query = input()
+    queries.append(query)
 
 counts = {}
 
