@@ -1,7 +1,6 @@
 import re
 
-with open('input.txt', 'r') as file:
-    data = file.read().splitlines()
+data = input()
 
 docs_number = int(data[0])
 documents = data[1:docs_number+1]
